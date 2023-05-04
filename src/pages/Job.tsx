@@ -1,14 +1,14 @@
-import React from "react";
+
 import { useParams } from "react-router-dom";
 import JobData from "../assets/job-directory-data.json";
 import Header from "../components/Header";
 import Subheader from "../components/Subheader";
-import Stack from "../components/Stack";
+
 import calendar from "../assets/calendar.png";
 import briefcase from "../assets/briefcase.png";
 import nav from "../assets/maps-and-flags.png";
 
-function Job(props: any) {
+function Job() {
   const param = useParams();
 
   const filteredArray = JobData.filter((item) => String(item.id) === param.id);
